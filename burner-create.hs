@@ -16,5 +16,5 @@ parser = (,)
 main :: IO ()
 main = do
   (kind, size) <- options "Create Burner" parser
-  out <- burnerCreate (fromMaybe "t2.micro" kind) (fromMaybe 50 size)
+  out <- burnerCreate (fromMaybe "t2.micro" kind) (fromMaybe 100 size)
   putStrLn out
